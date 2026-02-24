@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  weather-etl:
+    build: .
+    container_name: weather_etl
+    volumes:
+      - ./data:/app/data
+      - ./weather.db:/app/weather.db
+    command: python etl.py
+
+  metabase:
+    image: metabase/metabase
+    container_name: metabase_weather
+    ports:
+      - "3000:3000"
+    depends_on:
+      - weather-etl
