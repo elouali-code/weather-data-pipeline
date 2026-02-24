@@ -1,4 +1,5 @@
 # 🌦️ End-to-End Weather Data Pipeline
+<img width="998" height="272" alt="image" src="https://github.com/user-attachments/assets/4e87bf56-6ac0-478b-86d3-8819ecd957bd" />
 
 ## Overview
 
