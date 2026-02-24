@@ -15,4 +15,4 @@ for city in cities:
     with open(f"../raw/{city.lower()}.json", "w") as f:
         json.dump(data, f, indent=2)
 
-print("Extraction terminée ✅")
+print("Extraction terminée ")

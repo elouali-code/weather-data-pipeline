@@ -40,11 +40,11 @@ CREATE TABLE IF NOT EXISTS weather AS
 SELECT * FROM df
 """)
 
-print("Chargement dans DuckDB terminé ✅")
+print("Chargement dans DuckDB terminé ")
 
 import sqlite3
 
 sqlite_con = sqlite3.connect("../weather_sqlite.db")
 df.to_sql("weather", sqlite_con, if_exists="replace", index=False)
 
-print("Export vers SQLite terminé ✅")
+print("Export vers SQLite terminé ")
